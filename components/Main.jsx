@@ -1,7 +1,7 @@
-import styles from '@/components/Main.module.css'
-import { Links } from '@/components/links'
-import { Underline } from '@/components/underline'
-import { Headline } from '@/components/headline'
+import styles from './Main.module.css'
+import { Links } from '@/components/Link/links'
+import { Underline } from '@/components/Underline/underline'
+import { Headline } from '@/components/Headline/headline'
 
 export function Main(props) {
   return (

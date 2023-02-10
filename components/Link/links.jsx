@@ -1,4 +1,4 @@
-import styles from '@/components/Link.module.css'
+import styles from './Link.module.css'
 import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,15 +15,14 @@ const ITEMS = [
     description: "時々発信してます。" 
   },
   {
-    href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app", 
-    title: "Docs ", 
-    description: "Find in-depth information about Next.js features and&nbsp;API." 
+    href: "https://github.com/nosscafe66", 
+    title: "Github ", 
+    description: "個人リポジトリ" 
   },
   {
     href: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app", 
     title: "Learn ", 
     description: "Learn about Next.js in an interactive course with&nbsp;quizzes!" 
-
   },
   {
     href: "https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app", 
