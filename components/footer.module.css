@@ -1,0 +1,20 @@
+.footer {
+    border-top: 1px solid #eaeaea;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor {
+    padding:4px 12px;
+    display: inline-block;
+    font-size:1.2rem;
+}
+
+.anchor:hover,
+.anchor:focus,
+.anchor:active {
+    color:red
+}
