@@ -46,24 +46,27 @@ const ITEMS = [
   }
 ]
 
-export function Links() {
-  return (
-      <div className={styles.grid}>
-        {ITEMS.map(item => (
-        <a key ={item.href}
-          href={item.href}
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            {item.title} <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            {item.description}
-          </p>
-        </a>
-        ))}
-      </div>
-  );
+export function Links(props) {
+  if((props.page=="Contact") || (props.page=="Service")){
+  }else{
+    return (
+        <div className={styles.grid}>
+          {ITEMS.map(item => (
+          <a key ={item.href}
+            href={item.href}
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              {item.title} <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              {item.description}
+            </p>
+          </a>
+          ))}
+        </div>
+    );
+  }
 }

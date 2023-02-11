@@ -5,12 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(42, 161, 216);
 }
 
 .anchor {
     padding:4px 12px;
     display: inline-block;
     font-size:1.2rem;
+    width:200px;
 }
 
 .anchor:hover,

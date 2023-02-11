@@ -5,7 +5,7 @@ export function Footer() {
     return (
         <footer className={classes.footer}>
             <Link href="/" className={classes.anchor}>
-                CopyRight noss
+                ©︎ 2023 noss
             </Link>
         </footer>
     )

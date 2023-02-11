@@ -23,8 +23,8 @@ export function Main(props) {
       <Headline page={props.page}>
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
-      <Underline />
-      <Links />
+      <Underline page={props.page}/>
+      <Links page={props.page}/>
     </main>
   )
 }

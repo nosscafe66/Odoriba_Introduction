@@ -46,7 +46,7 @@
     transform: translateZ(0);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0px 2px 8px -1px #4608081a;
+    box-shadow: 0px 2px 8px -1px #d708081a;
   }
   
   .thirteen::before,
