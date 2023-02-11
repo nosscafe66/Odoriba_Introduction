@@ -5,10 +5,7 @@ export function Footer() {
     return (
         <footer className={classes.footer}>
             <Link href="/" className={classes.anchor}>
-                Index
-            </Link>
-            <Link href="/about" className={classes.anchor}>
-                About
+                CopyRight noss
             </Link>
         </footer>
     )

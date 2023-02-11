@@ -1,0 +1,11 @@
+.IndexButton{
+    text-align:center;
+}
+
+.Button{
+    border: 1px solid rgb(16, 163, 221);
+    padding: 10px;
+    margin-top:10px;
+    opacity: unset;
+    background-color: blue;
+}
