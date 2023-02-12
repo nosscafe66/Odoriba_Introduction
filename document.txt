@@ -1,0 +1,47 @@
+
+Next.js Firestore
+https://zenn.dev/elletech/articles/nextjs_firestore_json
+React todoアプリ
+https://qiita.com/taddy_korokoro/items/c465cb35e5317ec77c3f
+javascript(get post)
+https://webukatu.com/wordpress/blog/30539/#JavaScript
+react emailjs
+https://qiita.com/Annoske/items/11bc6be57266d2c0dbe6
+next.jsにできるだけ依存しないreact
+https://zenn.dev/panda_program/articles/nextjs-architecture
+データモデリングについて
+https://rainbow-engine.com/data-modeling-method/
+ER図
+https://it-koala.com/entity-relationship-diagram-1897#i-7
+データモデリング基本
+https://qiita.com/tarotaro1129/items/662afb8cb9b0969da7fd
+DOA中心
+https://thinkit.co.jp/article/17291
+データモデリング
+https://jp.drinet.co.jp/blog/datamanagement/data_modeling_3minutes
+ER図
+https://cacoo.com/ja/blog/entity-relationship-diagram-for-beginner/
+reactイベント
+https://ja.reactjs.org/docs/events.html#clipboard-events
+https://udomomo.hatenablog.com/entry/2017/10/14/125704
+
+openai
+https://platform.openai.com/docs/quickstart
+https://platform.openai.com/docs/libraries
+
+フロントエンド開発の基本
+https://rekaizen.com/article/detail/webservice-development/16918
+
+カルーセルUI
+https://ics.media/entry/210902/
+
+サバイバルTypeScript
+https://typescriptbook.jp/tutorials/react-like-button-tutorial
+TypeScript型
+https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a
+TypeScript DoM
+https://confrage.jp/typescriptでdom要素を作成する/
+
+TypeScriptエディター
+https://www.typescriptlang.org/play?#code/PTAEHUFMBsGMHsC2lQBd5oBYoCoE8AHSAZVgCcBLA1UABWgEM8BzM+AVwDsATAGiwoBnUENANQAd0gAjQRVSQAUCEmYKsTKGYUAbpGF4OY0BoadYKdJMoL+gzAzIoz3UNEiPOofEVKVqAHSKymAAmkYI7NCuqGqcANag8ABmIjQUXrFOKBJMggBcISGgoAC0oACCbvCwDKgU8JkY7p7ehCTkVDQS2E6gnPCxGcwmZqDSTgzxxWWVoASMFmgYkAAeRJTInN3ymj4d-jSCeNsMq-wuoPaOltigAKoASgAywhK7SbGQZIIz5VWCFzSeCrZagNYbChbHaxUDcCjJZLfSDbExIAgUdxkUBIursJzCFJtXydajBBCcQQ0MwAUVWDEQC0gADVHBQGNJ3KAALygABEAAkYNAMOB4GRonzFBTBPB3AERcwABS0+mM9ysygc9wASmCKhwzQ8ZC8iHFzmB7BoXzcZmY7AYzEg-Fg0HUiQ58D0Ii8fLpDKZgj5SWxfPADlQAHJhAA5SASPlBFQAeS+ZHegmdWkgR1QjgUrmkeFATjNOmGWH0KAQiGhwkuNok4uiIgMHGxCyYrA4PCCimSXFg9UaoEQDAySp1AG9FCUSjKaJx2IhpN8eaAAIyzucyuWQBXwZVLlffPUAXzHE51QA
+

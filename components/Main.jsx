@@ -6,10 +6,10 @@ import { useEffect } from 'react'
 
 export function Main(props) {
   useEffect(() => {
-    document.body.style.backgroundColor = "lightblue"
+    document.body.style.backgroundColor = ""
     return () => {
       document.body.style.backgroundColor = ""
-    }
+    };
   }, [])
   if (props.page == "Contact") {
     <main className={styles.main}>

@@ -1,12 +1,15 @@
 import { useCallback } from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 import classes from "./indexbutton.module.css"
 
 export function IndexButton() {
-    const [count,setCount] = useState(0)
+    const [count, setCount] = useState(0)
     const hundleClick = useCallback((e) => {
-        setCount(count => count + 1)
-    }, [])
+        if (count < 10) {
+            setCount(count => count + 1)
+        }
+    }, [count])
     return (
         <div className={classes.IndexButton}>
             <h1>{count}</h1>

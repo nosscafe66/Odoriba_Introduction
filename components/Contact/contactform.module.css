@@ -5,14 +5,55 @@
     align-items: center;
     padding: 6rem;
     min-height: 100vh;
+    background-color: blanchedalmond;
 }
 
 .inputname{
     height:50px;
     width:400px;
+    background-color: aliceblue;
+    color: black;
+    font-size: medium;
+    border-radius: 1.5rem;
 }
 
 .inputage{
     height:50px;
     width:100px;
+    background-color: black;
+    border-radius: 10rem;
+    color: white;
+    font-size: medium;
+}
+
+.inputage:hover,
+.inputage:focus,
+.inputage:active{
+    color: rgb(32, 172, 223);
+}
+
+.namelabel{
+    padding-bottom: 20px;
+}
+
+.categoryselect{
+    height: 50px;
+    width: 400px;
+    background-color: aliceblue;
+    color: black;
+    font-size: medium;
+    border-radius: 1.5rem;
+}
+
+.contextarea{
+    height: 100px;
+    width: 400px;
+    background-color: aliceblue;
+    color: black;
+    font-size: medium;
+    border-radius: 1.5rem;
+}
+
+.mustcontext{
+    color: crimson;
 }
