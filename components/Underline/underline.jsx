@@ -5,29 +5,33 @@ import { IconContext } from 'react-icons'
 import { ClassNames } from '@emotion/react'
 
 export function Underline(props) {
-  if((props.page=="Contact") || (props.page =="Service") || (props.page =="About")){
+  if ((props.page == "Contact") || (props.page == "Service") || (props.page == "About")) {
   }
-  else{
+  else {
     return (
       <div>
-          <div className={styles.center}>
-              <IconContext.Provider value={{ color: '#ccc', size: '300px' }}>
-              <div className={styles.thirteen}>
-                <h1><FaPython /></h1>
-              </div>
-              <div className={styles.thirteen}>
-                <h1>
+        <div className={styles.center}>
+          <IconContext.Provider value={{ color: '#ccc', size: '300px' }}>
+            <div className={styles.thirteen}>
+              <h1><FaPython /></h1>
+            </div>
+            <div className={styles.thirteen}>
+              <h1>
                 <FaAws />
-                </h1>
-              </div>
-              <div className={styles.thirteen}>
-                <h1><FaGithub /></h1>
-              </div>
-              <div className={styles.thirteen}>
-                <h1><FaReact /></h1>
-              </div>
-              </IconContext.Provider>
-          </div>
+              </h1>
+            </div>
+            <div className={styles.thirteen}>
+              <h1>
+                <FaGithub />
+              </h1>
+            </div>
+            <div className={styles.thirteen}>
+              <h1>
+                <FaReact />
+              </h1>
+            </div>
+          </IconContext.Provider>
+        </div>
       </div>
     )
   }

@@ -20,29 +20,9 @@ const ITEMS = [
     description: "個人リポジトリ" 
   },
   {
-    href: "#", 
-    title: "Learn ", 
-    description: "Learn about Next.js in an interactive course with&nbsp;quizzes!" 
-  },
-  {
-    href: "#", 
-    title: "Templates ", 
-    description: "Discover and deploy boilerplate example Next.js&nbsp;projects." 
-  },
-  {
-    href: "#", 
-    title: "Deploy ", 
-    description: "Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel." 
-
-  },  { 
-    href: "#", 
-    title: "Docs ", 
-    description: "Find in-depth information about Next.js features and&nbsp;API." 
-  },
-  {
-    href: "#", 
-    title: "Learn ", 
-    description: "Learn about Next.js in an interactive course with&nbsp;quizzes!" 
+    href: "https://github.com/nosscafe66/nossjob.github.io/blob/main/History.md", 
+    title: "Job History ", 
+    description: "職務経歴書" 
   }
 ]
 
