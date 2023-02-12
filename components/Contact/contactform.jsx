@@ -3,6 +3,7 @@ import classes from './contactform.module.css'
 export function ContactForm() {
     return (
         <div className={classes.ContactForm}>
+            <h1>お問合せフォーム</h1>
             <form method="POST">
                 <p className={classes.namelabel}>
                     <label htmlFor="お名前">お名前<span className={classes.mustcontext}>(必須)</span></label>

@@ -16,7 +16,7 @@ export function IndexButton() {
             <ul>
                 <li>
                     <button page={count} type="button" className={classes.Button}
-                        onClick={hundleClick}>Button1</button>
+                        onClick={hundleClick}>Button</button>
                 </li>
                 {/* <li>
                     <button type="button" className={classes.Button}

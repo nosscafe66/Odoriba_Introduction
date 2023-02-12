@@ -3,10 +3,11 @@ import { Links } from '@/components/Link/links'
 import { Underline } from '@/components/Underline/underline'
 import { Headline } from '@/components/Headline/headline'
 import { useEffect } from 'react'
+import { Service } from './Service/service'
 
 export function Main(props) {
   useEffect(() => {
-    document.body.style.backgroundColor = ""
+    document.body.style.backgroundColor = "#53A5D4"
     return () => {
       document.body.style.backgroundColor = ""
     };
@@ -17,7 +18,16 @@ export function Main(props) {
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
     </main>
-  } else {
+  } else if(props.page == "Service"){
+    return(
+      <main className={styles.main}>
+      <Headline page={props.page}>
+        <code className={styles.code}>pages/{props.page}.js</code>
+      </Headline>
+    </main>
+    )
+  }
+  else {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>

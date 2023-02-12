@@ -7,10 +7,14 @@
 
 .card {
   padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  border-radius: 12px;
+  background: #E48071;
+  border: 1px solid #E48071;
   transition: background 200ms, border 200ms;
+  --callout-rgb: #E48071;
+  --callout-border-rgb: #E48071;
+  --card-rgb: #E48071;
+  --card-border-rgb: #E48071;
 }
 
 .card span {

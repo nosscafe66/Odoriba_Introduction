@@ -22,8 +22,8 @@
     rgba(255, 255, 255, 0)
   );
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
+  --tile-start-rgb: #E48071;
+  --tile-end-rgb: #E48071;
   --tile-border: conic-gradient(
     #00000080,
     #00000040,
@@ -34,10 +34,10 @@
     #00000080
   );
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --callout-rgb: #E48071;
+  --callout-border-rgb: #E48071;
+  --card-rgb: #E48071;
+  --card-border-rgb: #E48071;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,16 +59,16 @@
       rgba(1, 65, 255, 0.3)
     );
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
+    --tile-start-rgb: #E48071;
+    --tile-end-rgb: #E48071;
     --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
+      #E48071,
+      #E48071,
+      #E48071,
+      #E48071,
+      #E48071,
+      #E48071,
+      #E48071
     );
 
     --callout-rgb: 20, 20, 20;

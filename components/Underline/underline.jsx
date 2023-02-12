@@ -10,6 +10,16 @@ export function Underline(props) {
       <div>
           <div className={styles.center}>
               <div className={styles.thirteen}>
+                <h1>Python</h1>
+              </div>
+              <div className={styles.thirteen}>
+                <h1>AWS</h1>
+              </div>
+              <div className={styles.thirteen}>
+                <h1>GCP</h1>
+              </div>
+              <div className={styles.thirteen}>
+                <h1>React(Next.js)</h1>
               </div>
           </div>
       </div>
