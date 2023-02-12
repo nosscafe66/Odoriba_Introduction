@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Main } from '@/components/Main'
 import { Header } from '@/components/Header/header'
 import { Footer } from '@/components/Footer/footer'
-import { IndexButton } from '@/components/Button/indexbutton'
 
 export default function Home() {
   return (

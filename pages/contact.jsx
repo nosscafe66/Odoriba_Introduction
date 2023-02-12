@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Main } from '@/components/Main'
 import { Header } from '@/components/Header/header'
 import { Footer } from '@/components/Footer/footer'
-import { IndexButton } from '@/components/Button/indexbutton'
+import { ContactForm } from '@/components/Contact/contactform'
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
       <Header />
       <Main page="Contact"/>
+      <ContactForm />
       <Footer />
     </div>
   )

@@ -47,7 +47,7 @@ const ITEMS = [
 ]
 
 export function Links(props) {
-  if((props.page=="Contact") || (props.page=="Service")){
+  if((props.page=="Contact") || (props.page=="Service") || (props.page =="Information")){
   }else{
     return (
         <div className={styles.grid}>

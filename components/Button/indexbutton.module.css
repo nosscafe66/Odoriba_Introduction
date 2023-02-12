@@ -8,3 +8,8 @@
     margin-top:10px;
     background-color: blue;
 }
+.Button:hover,
+.Button:focus,
+.Button:active {
+    color:rgb(220, 18, 14)
+}

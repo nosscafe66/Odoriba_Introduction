@@ -1,0 +1,18 @@
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.inputname{
+    height:50px;
+    width:400px;
+}
+
+.inputage{
+    height:50px;
+    width:100px;
+}
