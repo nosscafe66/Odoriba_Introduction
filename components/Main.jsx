@@ -4,6 +4,7 @@ import { Underline } from '@/components/Underline/underline'
 import { Headline } from '@/components/Headline/headline'
 import { useEffect } from 'react'
 import { Service } from './Service/service'
+import { About } from './About/about'
 
 export function Main(props) {
   useEffect(() => {
@@ -33,6 +34,7 @@ export function Main(props) {
         <Headline page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
+        <About /><br />
         <Underline page={props.page} />
         <Links page={props.page} />
       </main>

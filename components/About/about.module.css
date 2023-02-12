@@ -1,0 +1,9 @@
+.aboutcontext{
+    height: 300px;
+    width:800px;
+    background-color: chocolate;
+    border-radius: 1.5rem;
+    padding: 20px;
+    padding-bottom: 20rem;
+    border: solid black 1rem;
+}

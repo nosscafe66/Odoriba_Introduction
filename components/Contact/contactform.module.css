@@ -20,7 +20,7 @@
 .inputage{
     height:50px;
     width:100px;
-    background-color: black;
+    background-color: #E48071;
     border-radius: 10rem;
     color: white;
     font-size: medium;
@@ -29,7 +29,7 @@
 .inputage:hover,
 .inputage:focus,
 .inputage:active{
-    color: rgb(32, 172, 223);
+    color: #E48071;
 }
 
 .namelabel{
