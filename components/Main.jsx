@@ -5,6 +5,8 @@ import { Headline } from '@/components/Headline/headline'
 import { useEffect } from 'react'
 import { Service } from './Service/service'
 import { About } from './About/about'
+import { Slider } from '@chakra-ui/react'
+import { SlideSwiper } from '@/components/SlideSwiper/slideswiper'
 
 export function Main(props) {
   useEffect(() => {
@@ -25,6 +27,15 @@ export function Main(props) {
       <Headline page={props.page}>
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
+    </main>
+    )
+  } else if(props.page == "Information"){
+    return(
+      <main className={styles.main}>
+      <Headline page={props.page}>
+        <code className={styles.code}>pages/{props.page}.js</code>
+      </Headline>
+      <SlideSwiper />
     </main>
     )
   }
