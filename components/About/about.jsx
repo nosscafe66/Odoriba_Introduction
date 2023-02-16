@@ -24,7 +24,7 @@ export function About() {
     return (
         <div>
         <TodoForm add={addTodo} />
-        <div className={classes.aboutwrapper}>
+        <div className={classes.grid}>
             <div className={classes.aboutcontext}>
             <TodoList todos={todos} del={deleteTodo} />
             </div>
