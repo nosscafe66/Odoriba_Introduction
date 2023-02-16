@@ -2,11 +2,12 @@ import calsses from '@/components/TodoList/todolist.module.css'
 
 export function TodoList({ todos, del }) {
     return (
-        <div>
-            <h5>Todo List</h5>
+        <div className={calsses.torolist}>
+            <h3 className={calsses.texttitle}>Todo List</h3>
             <ul>
                 {
                     todos.map(todo => {
+                        //console.log(todos)
                         return (
                             <li key={todo.id}>
                                 {todo.text}

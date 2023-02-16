@@ -2,7 +2,9 @@ import { useState } from 'react';
 import calsses from '@/components/TodoForm/todoform.module.css'
 
 export function TodoForm({ add }) {
+    //todoリストの配列
     const [newTodo, setNewTodo] = useState('');
+
 
     const handleChange = event => {
         setNewTodo(event.target.value);
@@ -14,11 +16,10 @@ export function TodoForm({ add }) {
         setNewTodo('');
     }
     return (
-        <div>
+        <div className={calsses.todoform}>
             <h3>My Todo</h3>
-            <input value={newTodo} onChange={handleChange} placeholder="Input here..." />
+            <input className={calsses.inputform} value={newTodo} onChange={handleChange} placeholder="Input here..." />
             <button className={calsses.button} onClick={addTodo}>ADD</button>
-
         </div>
     )
 }

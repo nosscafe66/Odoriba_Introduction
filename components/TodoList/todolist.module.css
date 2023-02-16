@@ -1,3 +1,28 @@
 .button{
+    height: 50px;
+    width:200px;
     background-color: rgb(212, 135, 34);
+    border-radius: 1.2rem;
+    border: solid black;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+    background-color: burlywood;
+}
+
+.torolist{
+    height: 40px;
+    width:100px;
+    margin: auto;
+}
+
+.texttitle{
+    padding-bottom: 20px;
+}
+
+/*Mobile*/
+@media (max-width: 700px) {
+
 }

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './Headline.module.css'
 
 export function Headline(props) {
-    if(props.page=="Information"){
+    if((props.page=="Information") || (props.page=="About")){
     }else{
         return (
             <div>

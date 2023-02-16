@@ -1,11 +1,11 @@
 .aboutcontext{
     height: 300px;
     width:800px;
-    background-color: chocolate;
+    /* background-color: rgb(25, 199, 238); */
     border-radius: 1.5rem;
     padding: 20px;
     padding-bottom: 20rem;
-    border: solid black 1rem;
+    border: solid black 0.1rem;
 }
 
 .button{
