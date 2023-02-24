@@ -7,12 +7,13 @@ import { Service } from './Service/service'
 import { About } from './About/about'
 import { Slider } from '@chakra-ui/react'
 import { SlideSwiper } from '@/components/SlideSwiper/slideswiper'
+import { IndexButton } from './Button/indexbutton'
 
 export function Main(props) {
   useEffect(() => {
     document.body.style.backgroundColor = "#53A5D4"
     return () => {
-      document.body.style.backgroundColor = ""
+      document.body.style.backgroundColor = "#53A5D4"
     };
   }, [])
   if (props.page == "Contact") {
@@ -27,6 +28,7 @@ export function Main(props) {
       <Headline page={props.page}>
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
+      <IndexButton />
     </main>
     )
   } else if(props.page == "Information"){

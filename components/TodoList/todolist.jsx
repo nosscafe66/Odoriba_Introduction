@@ -7,16 +7,15 @@ export function TodoList({ todos, del }) {
             <ul>
                 {
                     todos.map(todo => {
-                        //console.log(todos)
-                        if(length(todos)==3){
+                        console.log(todos)
+                        if (todos.length < 3) {
+                            return (
+                                <li key={todo.id}>
+                                    {todo.text}
+                                    <button className={calsses.button} onClick={() => del(todo.id)}>DEL</button>
+                                </li>
+                            )
                         }
-                        return (
-                            <li key={todo.id}>
-                                {todo.text}
-                                <button className={calsses.button} onClick={() => del(todo.id)}>DEL</button>
-                            </li>
-                        )
-                            
                     })
                 }
             </ul>
