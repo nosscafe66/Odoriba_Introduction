@@ -1,8 +1,14 @@
 import classes from './contactform.module.css'
+import { useCallback, useState } from "react";
 
 export function ContactForm() {
 
-    
+    const [text, setText] = useState("")
+    const handleChange = useCallback((e) => {
+        e.target.value.trim()
+    })
+
+
     return (
         <div className={classes.ContactForm}>
             <h1>お問合せフォーム</h1>
@@ -10,15 +16,16 @@ export function ContactForm() {
                 <p className={classes.namelabel}>
                     <label htmlFor="お名前">お名前<span className={classes.mustcontext}>(必須)</span></label>
                 </p>
-                <input className={classes.inputname} type="text" name="name" required="required"/><br />
+                <input className={classes.inputname} type="text" name="name" required="required" value={text}
+                    onChange={handleChange} /><br />
                 <p className={classes.namelabel}>
                     <label htmlFor="お電話番号">お電話番号<span className={classes.mustcontext}>(必須)</span></label>
                 </p>
-                <input className={classes.inputname} type="tel" name="phonenumber" required="required"/><br />
+                <input className={classes.inputname} type="tel" name="phonenumber" required="required" value={text} onChange={handleChange}/><br />
                 <p className={classes.namelabel}>
                     <label htmlFor="メールアドレス">メールアドレス<span className={classes.mustcontext}>(必須)</span></label>
                 </p>
-                <input className={classes.inputname} type="email" name="mailaddress" required="required"/><br />
+                <input className={classes.inputname} type="email" name="mailaddress" required="required" value={text} onChange={handleChange}/><br />
                 <p className={classes.namelabel}>
                     <label htmlFor="性別">性別<span className={classes.mustcontext}>(必須)</span></label><br />
                     <input type="radio" name="num_of_inq" value="女" />女

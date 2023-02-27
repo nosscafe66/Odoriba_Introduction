@@ -114,3 +114,7 @@ https://blog.usize-tech.com/sendmail-form-by-react-mui/#toc3
 
 ロードマップ
 https://roadmap.sh/pdfs
+
+
+動的にレンダリングする（ルーティング）
+https://dev-k.hatenablog.com/entry/react-nextjs-link-dev-k

@@ -7,7 +7,7 @@ export function TodoForm({ add }) {
 
 
     const handleChange = event => {
-        setNewTodo(event.target.value);
+        setNewTodo(event.target.value.trim());
     }
 
     const addTodo = () => {
@@ -18,7 +18,7 @@ export function TodoForm({ add }) {
     return (
         <div className={calsses.todoform}>
             <h3>My Todo</h3>
-            <input className={calsses.inputform} value={newTodo} onChange={handleChange} placeholder="Input here..." />
+            <input className={calsses.inputform} value={newTodo} onChange={handleChange} placeholder="Input here..." /><br />
             <button className={calsses.button} onClick={addTodo}>ADD</button>
         </div>
     )

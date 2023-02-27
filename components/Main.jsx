@@ -8,6 +8,7 @@ import { About } from './About/about'
 import { Slider } from '@chakra-ui/react'
 import { SlideSwiper } from '@/components/SlideSwiper/slideswiper'
 import { IndexButton } from './Button/indexbutton'
+import { Login } from './Login/login'
 
 export function Main(props) {
   useEffect(() => {
@@ -37,7 +38,16 @@ export function Main(props) {
       <Headline page={props.page}>
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
-      <SlideSwiper />
+      {/* <SlideSwiper /> */}
+    </main>
+    )
+  }else if(props.page == "Login"){
+    return(
+      <main className={styles.main}>
+      <Headline page={props.page}>
+        <code className={styles.code}>pages/{props.page}.js</code>
+      </Headline>
+      <Login />
     </main>
     )
   }
