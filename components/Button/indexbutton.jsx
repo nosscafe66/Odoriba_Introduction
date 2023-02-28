@@ -7,7 +7,7 @@ export function IndexButton() {
     const [count, setCount] = useState(0)
     const [text, setText] = useState("")
     const [isShow, setIsShow] = useState(true)
-    const [array,setArray] = useState([])
+    const [array, setArray] = useState([])
     const hundleClick = useCallback((e) => {
         if (count < 10) {
             setCount(prevcount => prevcount + 1)
@@ -26,11 +26,15 @@ export function IndexButton() {
     })
 
     const handleAdd = useCallback(() => {
-        setArray((prevarray) => {
-            const newArray = [...prevarray,1]
+        setArray((prevArray) => {
+            if (prevArray.some((item) => item === text)) {
+                alert("同じ要素がすでに存在します。")
+                return prevArray
+            }
+            const newArray = [...prevArray, text]
             return newArray
         })
-    },[])
+    }, [text])
     return (
         <div className={classes.IndexButton}>
             {isShow ? <h1>{count}</h1> : null}
@@ -39,7 +43,7 @@ export function IndexButton() {
             <button onClick={handleAdd}>追加</button>
             <ul>
                 {array.map(item => {
-                    return(
+                    return (
                         <li key={item}>{item}</li>
                     )
                 })}
