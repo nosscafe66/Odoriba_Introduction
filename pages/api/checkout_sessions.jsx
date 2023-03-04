@@ -1,6 +1,6 @@
-const stripe = require('stripe')("sk_test_51JUCwkBW5Yr7MPTm89gKTi6c1Ax1Fj4HWV6FYBGu4eVwM0ZqjlIVdL0N8I1kRxxoMAS0D0mroPgwaLMKKc1ge2QN00tEwQbCZ6");//process.env.STRIPE_SECRET_KEY
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-export async function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
       // Create Checkout Sessions from body params.

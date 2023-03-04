@@ -31,7 +31,7 @@ export function Main(props) {
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
       <Service page={props.page}/>
-      <PreviewPage />
+      <PreviewPage /><br />
       <IndexButton />
     </main>
     )

@@ -18,7 +18,7 @@ export function PreviewPage() {
   }, []);
 
   return (
-    <form action="./checkout_sessions" method="POST">
+    <form action="./api/checkout_sessions" method="POST">
       <section>
         <button type="submit" role="link">
           Checkout
