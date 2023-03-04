@@ -8,7 +8,7 @@ import { About } from './About/about'
 import { IndexButton } from './Button/indexbutton'
 import { Login } from './Login/login'
 import { Information } from './Information/information'
-import { PaymentButton, PreviewPage } from './PaymentButton/previewpage'
+import { PaymentButton } from './PaymentButton/paymentbutton'
 
 
 export function Main(props) {
@@ -31,7 +31,7 @@ export function Main(props) {
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
       <Service page={props.page}/>
-      <PreviewPage /><br />
+      <PaymentButton /><br />
       <IndexButton />
     </main>
     )
