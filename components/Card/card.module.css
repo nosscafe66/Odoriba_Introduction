@@ -1,0 +1,7 @@
+/* Card.module.css */
+
+.card {
+    border: 1px solid #4e2018;
+    padding: 56px;
+    margin-bottom: 16px;
+  }

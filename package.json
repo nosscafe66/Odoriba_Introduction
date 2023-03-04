@@ -15,7 +15,9 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@next/font": "13.1.6",
+    "@react-three/fiber": "^8.11.5",
     "@splidejs/react-splide": "^0.7.12",
+    "@types/three": "^0.149.0",
     "framer-motion": "^9.0.2",
     "next": "13.1.6",
     "openai": "^3.1.0",
@@ -25,7 +27,12 @@
     "react-native-get-random-values": "^1.8.0",
     "react-sidebar": "^3.0.2",
     "swiper": "^9.0.5",
+    "three": "^0.150.1",
     "uuid": "^9.0.0",
     "uuidjs": "^5.0.0"
+  },
+  "devDependencies": {
+    "@pixiv/three-vrm": "^1.0.8",
+    "react-three-fiber": "^6.0.13"
   }
 }
