@@ -8,6 +8,8 @@ import { About } from './About/about'
 import { IndexButton } from './Button/indexbutton'
 import { Login } from './Login/login'
 import { Information } from './Information/information'
+import { PaymentButton, PreviewPage } from './PaymentButton/previewpage'
+
 
 export function Main(props) {
   useEffect(() => {
@@ -29,6 +31,7 @@ export function Main(props) {
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
       <Service page={props.page}/>
+      <PreviewPage />
       <IndexButton />
     </main>
     )

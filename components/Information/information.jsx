@@ -51,10 +51,12 @@ export function Information(){
     return (
         <Canvas>
             {/* <Thing /> */}
-            <ambientLight />
+            {/* <ambientLight />
             <pointLight position={[10, 10, 10]} />
             <Box position={[-1.2, 0, 0]} />
-            <Box position={[1.2, 0, 0]} />
+            <Box position={[1.2, 0, 0]} /> */}
+            <ambientLight intensity={0.5} />
+            <spotLight intensity={0.5} position={[300, 300, 4000]} />
         </Canvas>
     );
 } 
