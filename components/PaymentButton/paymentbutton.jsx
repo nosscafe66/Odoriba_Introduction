@@ -1,10 +1,12 @@
 import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import classes from './paymentbutton.module.css'
+import Image from 'next/image'
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
-const stripePromise = loadStripe("pk_test_51JUCwkBW5Yr7MPTmaT8D6F0ZnX202Oe4bo8229cdf4oZfCywEd5uTvfvZERy8DNUpDQrzcy690YfLigNBpvnH08A00mjk5YBHm");// process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);// process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 export function PaymentButton() {
   React.useEffect(() => {
     // Check to see if this is a redirect back from Checkout
@@ -20,22 +22,22 @@ export function PaymentButton() {
 
   return (
     <div>
-    <form action="./api/checkout_sessions" method="POST">
-      <section className={classes.section}>
-        エンジニアスクール1ヶ月コース(5万円)
-        <button className={classes.button} type="submit" role="link">
-          Checkout
-        </button>
-      </section>
-    </form><br />
-    <form action="./api/checkout_sessions" method="POST">
-      <section className={classes.section}>
-        エンジニアスクール3ヶ月コース(10万円)
-        <button className={classes.button} type="submit" role="link">
-          Checkout
-        </button>
-      </section>
-    </form>
+      <form action="./api/checkout_sessions_pro1" method="POST">
+        <section className={classes.section}>
+          <label className={classes.lable} htmlFor="エンジニアスクール1ヶ月コース(5万円)">エンジニアスクール1ヶ月コース(5万円)</label>
+          <button className={classes.button} type="submit" role="link">
+            Checkout
+          </button>
+        </section>
+      </form><br />
+      <form action="./api/checkout_sessions_pro2" method="POST">
+        <section className={classes.section}>
+          <label className={classes.lable} htmlFor="エンジニアスクール3ヶ月コース(10万円)">エンジニアスクール3ヶ月コース(10万円)</label>
+          <button className={classes.button} type="submit" role="link">
+            Checkout
+          </button>
+        </section>
+      </form>
     </div>
   );
 }

@@ -1,7 +1,24 @@
 /* Card.module.css */
 
+
 .card {
     border: 1px solid #4e2018;
+    background-color: #E48071;
     padding: 56px;
     margin-bottom: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    border-radius: 4.5% / 3.5%;
   }
+
+.img {
+  border-radius: 6px;
+  opacity: 0.8;
+  margin: auto;
+}
+
+.description.overflow-wrap {
+  overflow-wrap: break-word;
+}
