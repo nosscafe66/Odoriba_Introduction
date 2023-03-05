@@ -24,7 +24,7 @@ export function PaymentButton() {
     <div>
       <form action="./api/checkout_sessions_pro1" method="POST">
         <section className={classes.section}>
-          <label className={classes.lable} htmlFor="エンジニアスクール1ヶ月コース(5万円)">エンジニアスクール1ヶ月コース(5万円)</label>
+          <label className={classes.label} htmlFor="エンジニアスクール1ヶ月コース(5万円)">エンジニアスクール1ヶ月コース(5万円)</label>
           <button className={classes.button} type="submit" role="link">
             Checkout
           </button>
@@ -32,7 +32,7 @@ export function PaymentButton() {
       </form><br />
       <form action="./api/checkout_sessions_pro2" method="POST">
         <section className={classes.section}>
-          <label className={classes.lable} htmlFor="エンジニアスクール3ヶ月コース(10万円)">エンジニアスクール3ヶ月コース(10万円)</label>
+          <label className={classes.label} htmlFor="エンジニアスクール3ヶ月コース(10万円)">エンジニアスクール3ヶ月コース(10万円)</label>
           <button className={classes.button} type="submit" role="link">
             Checkout
           </button>
