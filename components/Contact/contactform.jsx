@@ -42,7 +42,6 @@ export function ContactForm() {
                     <option value="select_no4">開発の勉強方法について</option>
                     <option value="select_no5">プログラミングスキルの付け方</option>
                 </select>
-                {/* <input className={classes.inputname} type="search" name="category" /><br /> */}
                 <p className={classes.namelabel}>
                     <label htmlFor="お問合せ内容">お問合せ内容<span className={classes.mustcontext}>(必須)</span></label>
                 </p>

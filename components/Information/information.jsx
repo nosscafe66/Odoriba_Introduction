@@ -18,25 +18,25 @@ function Box(props) {
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? 'black' : 'orange'} />
+      <meshStandardMaterial color={hovered ? 'black' : 'white'} />
     </mesh>
   )
 }
 
 export function Information() {
   return (
-    <div>
+    <div id="canvas">
       <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <ambientLight intensity={0.5} />
+        {/* <ambientLight /> */}
+        {/* <pointLight position={[10, 10, 10]} /> */}
+        {/* <ambientLight intensity={0.5} /> */}
         <Box position={[-1.2, 0, 0]} />
         <Box position={[1.2, 0, 0]} />
-        <spotLight intensity={0.5} position={[300, 300, 4000]} />
+        <spotLight intensity={0.5} position={[3000, 3000, 4000]} />
         <Box position={[-1.2, 1, 1]} />
         <Box position={[10, 1, 2]} />
       </Canvas>
-      <Image src="/img/pivottech.png" width={600} height={200} className={classes.img} />
+      <Image src="/img/pivottech.png" width={600} height={200} className={classes.img} alt=""/>
     </div>
   );
 }

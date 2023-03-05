@@ -12,11 +12,5 @@
     padding:4px 12px;
     display: inline-block;
     font-size:1.2rem;
-    color: #000000;
-}
-
-.anchor:hover,
-.anchor:focus,
-.anchor:active {
-    color:red
+    color: #ffffff;
 }

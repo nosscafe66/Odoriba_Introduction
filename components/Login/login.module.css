@@ -1,7 +1,7 @@
 .Login{
     height: 300px;
     width: 300px;
-    background-color: #E48071;
+    background-color: #000000;
     border-radius: 1.2rem;
     margin: auto;
 }
@@ -16,7 +16,7 @@
     height:50px;
     width:250px;
     background-color: aliceblue;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: medium;
     border-radius: 1.5rem;
 }
@@ -24,9 +24,9 @@
 .inputage{
     height:50px;
     width:100px;
-    background-color: #8b3f34;
+    background-color: #ffffff;
     border-radius: 10rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: medium;
 }
 
@@ -34,4 +34,12 @@
 .inputage:focus,
 .inputage:active{
     color: #E48071;
+}
+
+.mustcontext {
+    color: white;
+}
+
+.label {
+    color: white;
 }

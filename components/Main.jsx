@@ -9,13 +9,15 @@ import { IndexButton } from './Button/indexbutton'
 import { Login } from './Login/login'
 import { Information } from './Information/information'
 import { PaymentButton } from './PaymentButton/paymentbutton'
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
 
 
 export function Main(props) {
   useEffect(() => {
-    document.body.style.backgroundColor = "#53A5D4"
+    document.body.style.backgroundColor = "#FFFFFF"
     return () => {
-      document.body.style.backgroundColor = "#53A5D4"
+      document.body.style.backgroundColor = "#FFFFFF"
     };
   }, [])
   if (props.page == "Contact") {
@@ -24,33 +26,40 @@ export function Main(props) {
         <code className={styles.code}>pages/{props.page}.js</code>
       </Headline>
     </main>
-  } else if(props.page == "Service"){
-    return(
+  } else if (props.page == "Service") {
+    return (
       <main className={styles.main}>
-      <Headline page={props.page}>
-        <code className={styles.code}>pages/{props.page}.js</code>
-      </Headline>
-      <Service page={props.page}/>
-      <IndexButton />
-    </main>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
+        <Service page={props.page} />
+        <IndexButton />
+      </main>
     )
-  } else if(props.page == "Information"){
-    return(
+  } else if (props.page == "Information") {
+    // const rootElement = document.getElementById("root");
+    // ReactDOM.render(
+    //   <StrictMode>
+    //     <Information />
+    //   </StrictMode>,
+    //   rootElement
+    // );
+    return (
       <main className={styles.main}>
-      <Headline page={props.page}>
-        <code className={styles.code}>pages/{props.page}.js</code>
-      </Headline>
-      <Information />
-    </main>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
+        <Information />
+      </main>
     )
-  }else if(props.page == "Login"){
-    return(
+  } else if (props.page == "Login") {
+    return (
       <main className={styles.main}>
-      <Headline page={props.page}>
-        <code className={styles.code}>pages/{props.page}.js</code>
-      </Headline>
-      <Login />
-    </main>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
+        <Login />
+      </main>
     )
   }
   else {
