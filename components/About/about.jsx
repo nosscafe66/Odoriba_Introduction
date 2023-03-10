@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from "uuid";
 import { useCounter } from '../lib/useCounter';
 import { useInputArray } from '../lib/useInputArray';
-import { Blog } from '../Blog/blog';
 
 export function About() {
   const { count, isShow, handleDisplay, hundleClick } = useCounter()

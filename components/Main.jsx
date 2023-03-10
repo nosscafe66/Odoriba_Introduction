@@ -8,10 +8,7 @@ import { About } from './About/about'
 import { IndexButton } from './Button/indexbutton'
 import { Login } from './Login/login'
 import { Information } from './Information/information'
-import { PaymentButton } from './PaymentButton/paymentbutton'
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
-import Contents from '@/pages/contents'
+import BlogContent from './Blog/blogcontent'
 
 
 export function Main(props) {
@@ -53,6 +50,7 @@ export function Main(props) {
         <Headline page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
+        <BlogContent blog={props.blog}/>
       </main>
     )
   }
