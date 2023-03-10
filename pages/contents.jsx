@@ -15,7 +15,7 @@ export default function Blog({ blog }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <Main page="Contents" blog={blog}/>
+            <Main page="Contents" blog={blog} />
             {/* <BlogContent /> */}
             <Footer />
         </div>
