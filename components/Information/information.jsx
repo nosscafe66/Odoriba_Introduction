@@ -26,7 +26,7 @@ function Box(props) {
 export function Information() {
   return (
     <div id="canvas">
-      <Canvas>
+      <Canvas className={classes.canvas}>
         {/* <ambientLight /> */}
         {/* <pointLight position={[10, 10, 10]} /> */}
         {/* <ambientLight intensity={0.5} /> */}

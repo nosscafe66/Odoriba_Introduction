@@ -16,6 +16,9 @@ export function Header() {
                 <Link href="/contact" className={classes.anchor}>
                     Contact
                 </Link>
+                <Link href="/contents" className={classes.anchor}>
+                    Contents
+                </Link>
                 <Link href="/login" className={classes.anchor}>
                     Login
                 </Link>

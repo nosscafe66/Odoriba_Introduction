@@ -11,6 +11,7 @@ import { Information } from './Information/information'
 import { PaymentButton } from './PaymentButton/paymentbutton'
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
+import Contents from '@/pages/contents'
 
 
 export function Main(props) {
@@ -37,13 +38,6 @@ export function Main(props) {
       </main>
     )
   } else if (props.page == "Information") {
-    // const rootElement = document.getElementById("root");
-    // ReactDOM.render(
-    //   <StrictMode>
-    //     <Information />
-    //   </StrictMode>,
-    //   rootElement
-    // );
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
@@ -52,7 +46,17 @@ export function Main(props) {
         <Information />
       </main>
     )
-  } else if (props.page == "Login") {
+  }
+  else if (props.page == "Contents") {
+    return (
+      <main className={styles.main}>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
+      </main>
+    )
+  }
+  else if (props.page == "Login") {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
