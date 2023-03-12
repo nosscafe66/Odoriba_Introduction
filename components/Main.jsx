@@ -50,7 +50,19 @@ export function Main(props) {
         <Headline page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
-        <BlogContent blog={props.blog}/>
+        <BlogContent blog={props.blog} totalCount={props.totalCount} />
+        {props.comp}
+      </main>
+    )
+  }
+  else if (props.page == "BlogContents") {
+    return (
+      <main className={styles.main}>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
+        {props.pagecomp}
+        {props.comp}
       </main>
     )
   }

@@ -22,3 +22,82 @@
 @media (max-width: 700px) {
 
 }
+
+
+
+.venn {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width: 20em;
+    height: 19em;
+    font-size: 1.5vw;
+    list-style: none;
+}
+.venn > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 11.5em;
+    height: 11.5em;
+    box-sizing: border-box;
+    border: solid 0.1em currentColor;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.5;
+}
+.venn > li:nth-of-type(1) {
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 0.5em;
+}
+.venn > li:nth-of-type(2) {
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 2.5em 0px 0.5em;
+}
+.venn > li:nth-of-type(3) {
+    bottom: 0px;
+    right: 0px;
+    padding: 0px 0.5em 0px 2.5em;
+}
+
+.vennlink_1{
+    z-index: 3;
+    color: rgb(250, 189, 109);
+    background: antiquewhite;
+}
+
+.vennlink_2{
+    z-index: 3;
+    color: rgb(250, 189, 109);
+    background: rgb(250, 189, 109);
+}
+
+.vennlink_3{
+    z-index: 3;
+    color: rgb(250, 189, 109);
+    background: rgb(228, 135, 14);
+}
+
+.vennlink_1:hover{
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.vennlink_2:hover{
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.vennlink_3:hover{
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.vennfont{
+    color: rgb(0, 0, 0);
+}

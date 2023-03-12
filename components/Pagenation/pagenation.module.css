@@ -1,0 +1,15 @@
+.pagelist{
+    display: inline;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin: 10px;
+}
+
+.pagelist:hover{
+    color: red;
+}
+
+.page_container{
+    text-align: center;
+}
