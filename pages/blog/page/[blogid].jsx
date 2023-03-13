@@ -9,9 +9,9 @@ export default function BlogPageId({ blog, totalCount }) {
     return (
         <div className={classes.content_container}>
             <ul>
-                {blog.map(blog => (
+                {blog.map((blog,index) => (
                     <li key={blog.id}>
-                        <Link href={`/blog/page/${blog.id}`}>{blog.title}</Link>
+                        <Link href={`/blog/${index}`}>{blog.title}</Link>
                     </li>
                 ))}
             </ul>
