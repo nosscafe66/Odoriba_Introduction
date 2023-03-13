@@ -7,7 +7,7 @@ export default function BlogContent({ blog, totalCount }) {
       <div className={classes.contents}>
         {blog.map((blog, index) => (
           <li key={blog.id} className={classes.bloglist}>
-            <Link href={`/blog/${blog.id}`}>Title：{blog.title} Posttime：{blog.createdAt}</Link>
+            <Link href={`/blog/${blog.id}`}>{blog.title} <p>{blog.createdAt}</p></Link>
           </li>
         ))}
       </div>
