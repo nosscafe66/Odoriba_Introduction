@@ -1,6 +1,6 @@
 
 import React, { useRef, useState } from 'react';
-import { Canvas, useFrame } from 'react-three-fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import Image from 'next/image'
 import classes from './information.module.css'
 
