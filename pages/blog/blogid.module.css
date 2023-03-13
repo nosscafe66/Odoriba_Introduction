@@ -1,0 +1,21 @@
+.title{
+    font-size: large;
+    font-weight: 100;
+    border: solid black;
+    padding: 5px;
+}
+
+.publishedtime{
+    font-size: large;
+    font-weight: 100;
+    border: solid black;
+    padding: 5px;
+}
+
+.content_container{
+    font-size: large;
+    font-weight: 100;
+    border: solid black;
+    padding: 5px;
+    height: 900px;
+}
