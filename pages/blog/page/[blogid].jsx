@@ -8,13 +8,13 @@ const PER_PAGE = 1;
 export default function BlogPageId({ blog, totalCount }) {
     return (
         <div className={classes.content_container}>
-            <ul>
+            {/* <ul>
                 {blog.map((blog,index) => (
                     <li key={blog.id}>
                         <Link href={`/blog/${index}`}>{blog.title}</Link>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
             <Pagination totalCount={totalCount} />
         </div>
     );
