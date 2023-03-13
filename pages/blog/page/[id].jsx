@@ -33,7 +33,7 @@ export const getStaticPaths = async () => {
 
 // データを取得
 export const getStaticProps = async (context) => {
-    const blogid = context.params.blogid;
+    const blogid = context.params.id;
 
     const data = await client.get({ endpoint: "blog", queries: { offset: (blogid - 1) * 5, limit: 5 } });
 
