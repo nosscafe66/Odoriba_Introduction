@@ -28,7 +28,7 @@ export const getStaticPaths = async () => {
     const paths = range(1, Math.ceil(repos.totalCount / PER_PAGE)).map((repo) => `/blog/page/${repo}`);
     // const paths = repos.contents.map((content) => `/blog/${content.id}`);
 
-    return { paths, fallback: false };
+    return { paths, fallback: true };
 };
 
 export const getStaticProps = async (context) => {
