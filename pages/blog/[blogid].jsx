@@ -1,7 +1,7 @@
 import { Pagination } from '@/components/Pagenation/pagenation';
 import Link from 'next/link';
 import { client } from "../../api/libs/client";
-import classes from "./id.module.css"
+import classes from "./blogid.module.css"
 
 const PER_PAGE = 1;
 
@@ -32,7 +32,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-    const blogid = context.params.id;
+    const blogid = context.params.blogid;
 
     const data = await client.get({ endpoint: "blog", queries: { offset: (blogid - 1) * 5, limit: 5 } });
 
