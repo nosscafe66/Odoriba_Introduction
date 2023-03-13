@@ -31,7 +31,6 @@ export const getStaticPaths = async () => {
     return { paths, fallback: false };
 };
 
-// データを取得
 export const getStaticProps = async (context) => {
     const blogid = context.params.id;
 
