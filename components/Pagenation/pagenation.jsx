@@ -19,7 +19,7 @@ export const Pagination = ({ totalCount, blogid }) => {
       <ul>
         {blogid.map((blogid, pagecount) => (
           <li key={blogid.id} className={classes.pagelist}>
-            <Link href={`/blog/page/${pagecount}`}>{isPagecount ? pagecount + 1 : pagecount}</Link>
+            <Link href={`/blog/${blogid.id}`}>{isPagecount ? pagecount + 1 : pagecount}</Link>
           </li>
         ))}
       </ul>
