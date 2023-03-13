@@ -1,7 +1,7 @@
 import { Pagination } from '@/components/Pagenation/pagenation';
 import Link from 'next/link';
 import { client } from "../../api/libs/client";
-import classes from "./blogid.module.css"
+import classes from "./id.module.css"
 
 const PER_PAGE = 1;
 
