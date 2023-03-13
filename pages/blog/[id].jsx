@@ -18,13 +18,15 @@ export default function BlogId({ data, blog, totalCount }) {
             <Header />
             <Main page="BlogContents" blog={blog} totalCount={totalCount} comp={<Pagination totalCount={totalCount} blogid={blog} />} pagecomp={<div>
                 <div>
-                    <h1 className={classes.title}>{data.title}</h1>
-                    <p className={classes.publishedtime}>{data.publishedAt}</p>
+                    <div className={classes.blogcontainer}>
+                    <h1 className={classes.title}>{data.title}</h1><br />
+                    <p className={classes.publishedtime}>{data.publishedAt}</p><br />
                     <div className={classes.content_container}
                         dangerouslySetInnerHTML={{
                             __html: `${data.content}`,
                         }}
                     />
+                    </div>
                 </div>
             </div>} />
             <Footer />

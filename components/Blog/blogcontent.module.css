@@ -28,9 +28,11 @@
 
 .bloglist{
     list-style: none;
+    padding: 10px;
     border: solid black;
     margin: 1.2rem;
     border-radius: 6px;
+    height: 50px;
 }
 
 .bloglist:hover{

@@ -3,6 +3,8 @@
     font-weight: 100;
     border: solid black;
     padding: 5px;
+    border-radius: 6px;
+    background-color: antiquewhite;
 }
 
 .publishedtime{
@@ -10,11 +12,20 @@
     font-weight: 100;
     border: solid black;
     padding: 5px;
+    border-radius: 6px;
+    background-color: antiquewhite;
 }
 
 .content_container{
     font-size: large;
     font-weight: 100;
     border: solid black;
-    padding: 5px;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: antiquewhite;
+    width: 900px;
+}
+
+.blogcontainer{
+    margin: 1.2rem;
 }
