@@ -25,6 +25,9 @@ export function Header() {
             <Link href="/signup" className={classes.anchor}>
                 Signup
             </Link>
+            <Link href="/map" className={classes.anchor}>
+                Map
+            </Link>
         </header>
     )
 }
