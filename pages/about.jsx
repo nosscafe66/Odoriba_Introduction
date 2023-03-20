@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import App from 'next/app'
 import { Main } from '@/components/Main'
 import { Header } from '@/components/Header/header'
 import { Footer } from '@/components/Footer/footer'

@@ -66,13 +66,21 @@ export function Main(props) {
       </main>
     )
   }
-  else if (props.page == "Login") {
+  else if (props.page == "Login_Before") {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
-        <Login />
+      </main>
+    )
+  }
+  else if (props.page == "Login_After") {
+    return (
+      <main className={styles.main}>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
       </main>
     )
   }

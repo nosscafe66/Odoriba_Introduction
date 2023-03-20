@@ -1,11 +1,17 @@
 import '@/styles/globals.css'
 import { ChakraProvider } from "@chakra-ui/react"
-import { UserProvider } from '@auth0/nextjs-auth0';
+import { Auth0Provider } from '@auth0/auth0-react'
 
 export default function App({ Component, pageProps }) {
-  return(
+  return (
     <ChakraProvider>
-      <Component {...pageProps} />
-      </ChakraProvider>
+      <Auth0Provider
+        domain="dev-38se6zvu8y7kxej4.jp.auth0.com"
+        clientId="0j9Vj00XtmJtyYfLYin45tLsLDZLbmhC"
+        redirectUri="http://localhost:3000/"
+      >
+        <Component {...pageProps} />
+      </Auth0Provider>
+    </ChakraProvider >
   )
 }

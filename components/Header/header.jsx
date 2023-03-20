@@ -4,7 +4,7 @@ import classes from "./header.module.css"
 export function Header() {
     return (
         <header className={classes.header}>
-            <Link href="/" className={classes.anchor}>
+            <Link href="/information" className={classes.anchor}>
                 Information
             </Link>
             <Link href="/about" className={classes.anchor}>
@@ -18,12 +18,6 @@ export function Header() {
             </Link>
             <Link href="/contact" className={classes.anchor}>
                 Contact
-            </Link>
-            <Link href="/login" className={classes.anchor}>
-                Login
-            </Link>
-            <Link href="/signup" className={classes.anchor}>
-                Signup
             </Link>
             <Link href="/map" className={classes.anchor}>
                 Map

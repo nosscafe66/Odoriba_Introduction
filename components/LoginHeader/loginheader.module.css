@@ -1,0 +1,23 @@
+.header {
+    border-bottom: 1px solid #000000;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.anchor {
+    padding:4px 12px;
+    display: inline-block;
+    font-size:1.2rem;
+    width:200px;
+    color: white;
+}
+
+.anchor:hover,
+.anchor:focus,
+.anchor:active {
+    color:rgb(5, 42, 162)
+}
