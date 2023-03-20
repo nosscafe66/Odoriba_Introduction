@@ -66,7 +66,7 @@ export function Main(props) {
       </main>
     )
   }
-  else if (props.page == "Login_Before") {
+  else if (props.page == "Login") {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
@@ -75,16 +75,7 @@ export function Main(props) {
       </main>
     )
   }
-  else if (props.page == "Login_After") {
-    return (
-      <main className={styles.main}>
-        <Headline page={props.page}>
-          <code className={styles.code}>pages/{props.page}.js</code>
-        </Headline>
-      </main>
-    )
-  }
-  else {
+  else if(props.page == "About") {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
@@ -93,6 +84,14 @@ export function Main(props) {
         <About /><br />
         <Underline page={props.page} />
         <Links page={props.page} />
+      </main>
+    )
+  }else{
+    return (
+      <main className={styles.main}>
+        <Headline page={props.page}>
+          <code className={styles.code}>pages/{props.page}.js</code>
+        </Headline>
       </main>
     )
   }

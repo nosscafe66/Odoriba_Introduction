@@ -1,45 +1,6 @@
-.Login{
-    height: 300px;
-    width: 300px;
-    background-color: #000000;
-    border-radius: 1.2rem;
-    margin: auto;
-}
-
-.LoginForm{
-    padding: 30px 20px 20px 20px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.inputname{
-    height:50px;
-    width:250px;
-    background-color: aliceblue;
-    color: rgb(255, 255, 255);
-    font-size: medium;
-    border-radius: 1.5rem;
-}
-
-.inputage{
-    height:50px;
-    width:100px;
-    background-color: #ffffff;
-    border-radius: 10rem;
-    color: rgb(0, 0, 0);
-    font-size: medium;
-}
-
-.inputage:hover,
-.inputage:focus,
-.inputage:active{
-    color: #E48071;
-}
-
-.mustcontext {
-    color: white;
-}
-
-.label {
-    color: white;
+.logoutbutton{
+    color: rgb(220, 25, 25);
+    background-color: aqua;
+    height: 20px;
+    width: 20px;
 }

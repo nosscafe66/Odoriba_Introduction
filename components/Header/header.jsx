@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { LoginButton } from "../Login/login";
+import { LogoutButton } from "../Logout/logout";
 import classes from "./header.module.css"
 
 export function Header() {
