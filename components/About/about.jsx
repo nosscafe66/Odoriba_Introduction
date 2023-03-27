@@ -11,7 +11,6 @@ export function About() {
         <li className={classes.vennlink_2}><Link href={`/`}><p className={classes.vennfont}>技術学習支援</p></Link></li>
         <li className={classes.vennlink_3}><Link href={`/`}><p className={classes.vennfont}>企業とあなたのカルチャーマッチ判断</p></Link></li>
       </ul>
-     <Gmail />
     </div>
   )
 }

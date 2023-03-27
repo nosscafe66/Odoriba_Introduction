@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { LoginButton } from "../Login/login";
-import { LogoutButton } from "../Logout/logout";
+import { Login } from "../Login/login";
 import classes from "./header.module.css"
 
 export function Header() {
@@ -24,6 +23,7 @@ export function Header() {
             <Link href="/map" className={classes.anchor}>
                 Map
             </Link>
+            <Login />
         </header>
     )
 }

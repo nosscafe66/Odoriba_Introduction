@@ -1,6 +1,13 @@
-.logoutbutton{
-    color: rgb(220, 25, 25);
-    background-color: aqua;
-    height: 20px;
-    width: 20px;
+.loginbutton{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: 6px;
+}
+
+.loginbutton:hover{
+    color: rgb(249, 49, 49);
+}
+
+.loginstatus{
+    color: red;
 }

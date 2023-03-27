@@ -1,11 +1,27 @@
+import { useAuth0, User } from '@auth0/auth0-react';
 import classes from './login.module.css'
-import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
 
-export function LoginButton() {
+export function Login() {
+    const {
+        isAuthenticated,
+        loginWithRedirect,
+        logout,
+        user
+    } = useAuth0();
 
-    const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
-
-    return isAuthenticated ? (
-        <button className={classes.loginbutton} onClick={() => loginWithRedirect()}>Login</button>) : null;
+    return (
+        <div>
+            {!isAuthenticated && (
+                <div>
+                    <p className={classes.loginstatus}>{user?.name}でログイン中</p>
+                    <button className={classes.loginbutton} onClick={() => logout()}>ログアウト</button>
+                </div>
+            )}
+            {isAuthenticated && (
+                <div>
+                    <button onClick={() => loginWithRedirect()}>ログイン</button>
+                </div>
+            )}
+        </div>
+    )
 }
