@@ -1,7 +1,7 @@
 import Link from "next/link";
 import classes from './blogcontent.module.css'
 
-export default function BlogContent({ blog, totalCount }) {
+export default function BlogContent({ blog }) {
   return (
     <div className={classes.content_container}>
       <div className={classes.contents}>

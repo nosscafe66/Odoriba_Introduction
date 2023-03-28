@@ -13,7 +13,6 @@ export function Login() {
         <div>
             {!isAuthenticated && (
                 <div>
-                    <p className={classes.loginstatus}>{user?.name}でログイン中</p>
                     <button className={classes.loginbutton} onClick={() => logout()}>ログアウト</button>
                 </div>
             )}

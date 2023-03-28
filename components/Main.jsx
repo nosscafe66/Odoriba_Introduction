@@ -6,9 +6,10 @@ import { useEffect } from 'react'
 import { Service } from './Service/service'
 import { About } from './About/about'
 import { IndexButton } from './Button/indexbutton'
-import { Login } from './Login/login'
 import { Information } from './Information/information'
 import BlogContent from './Blog/blogcontent'
+import { Category } from './Tag/tag'
+import { Content } from './Content/content'
 
 
 export function Main(props) {
@@ -50,7 +51,7 @@ export function Main(props) {
         <Headline page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
-        <BlogContent blog={props.blog} totalCount={props.totalCount} />
+        <Content category_cmp={<Category category={props.category}/>} blog_cmp={<BlogContent blog={props.blog} totalCount={props.totalCount} />}/>
         {props.comp}
       </main>
     )

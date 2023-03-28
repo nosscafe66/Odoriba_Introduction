@@ -1,0 +1,24 @@
+.maincontent{
+    background-color: rgb(250, 238, 168);
+    height: 900px;
+    width: 900px;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: inset;
+}
+
+.categorybar{
+    list-style: none;
+}
+
+.blogcontent{
+    list-style: none;
+}
+
+.li{
+    float: left;
+}
+
+.ul{
+    display: flex;
+}
