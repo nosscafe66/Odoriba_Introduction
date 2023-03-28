@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
       <Auth0Provider
         domain="dev-38se6zvu8y7kxej4.jp.auth0.com"//{domain}
         clientId="0j9Vj00XtmJtyYfLYin45tLsLDZLbmhC"//{clientId}
-        redirectUri="http://localhost:3000/success"//{redirectUri}//https://reactpro-9gdzsdj2m-nosscafe66.vercel.app/http://localhost:3000/
+        redirectUri="https://reactpro-836uwlgv0-nosscafe66.vercel.app/success"//{redirectUri}//https://reactpro-9gdzsdj2m-nosscafe66.vercel.app/http://localhost:3000/
       >
         <Component {...pageProps} />
       </Auth0Provider>

@@ -51,7 +51,7 @@ export function Main(props) {
         <Headline page={props.page}>
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
-        <Content category_cmp={<Category category={props.category}/>} blog_cmp={<BlogContent blog={props.blog} totalCount={props.totalCount} />}/>
+        <Content category_cmp={<Category category={props.category} />} blog_cmp={<BlogContent blog={props.blog} totalCount={props.totalCount} />} />
         {props.comp}
       </main>
     )
@@ -76,7 +76,7 @@ export function Main(props) {
       </main>
     )
   }
-  else if(props.page == "About") {
+  else if (props.page == "About") {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
@@ -87,7 +87,7 @@ export function Main(props) {
         <Links page={props.page} />
       </main>
     )
-  }else{
+  } else {
     return (
       <main className={styles.main}>
         <Headline page={props.page}>
