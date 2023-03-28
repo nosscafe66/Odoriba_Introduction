@@ -9,9 +9,9 @@ export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider>
       <Auth0Provider
-        domain={domain}
-        clientId={clientId}
-        redirectUri={redirectUri}//https://reactpro-9gdzsdj2m-nosscafe66.vercel.app/http://localhost:3000/
+        domain="dev-38se6zvu8y7kxej4.jp.auth0.com"//{domain}
+        clientId="0j9Vj00XtmJtyYfLYin45tLsLDZLbmhC"//{clientId}
+        redirectUri="http://localhost:3000/success"//{redirectUri}//https://reactpro-9gdzsdj2m-nosscafe66.vercel.app/http://localhost:3000/
       >
         <Component {...pageProps} />
       </Auth0Provider>
