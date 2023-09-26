@@ -1,8 +1,93 @@
-.canvas {
-  width: 800px;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-.img {
-    border-radius: 6px;
-    margin: auto;
+.imageSection {
+  margin-bottom: 30px;
+}
+
+.philosophySection,
+.servicesSection,
+.faqSection {
+  margin-bottom: 40px;
+}
+
+.wrapper h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.wrapper h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.wrapper ul {
+  padding-left: 20px;
+}
+
+.wrapper li {
+  margin-bottom: 10px;
+}
+
+.servicesSection li {
+  max-width: 800px; /* この値は元の画像の幅に合わせて変更してください */
+  width: 100%;
+}
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 800px;
+    padding: 15px;
   }
+
+  .wrapper h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .wrapper h3 {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .servicesSection li {
+    max-width: 400px; /* スマートフォンやタブレットの画面幅に合わせて値を調整してください */
+  }
+}
+
+/* For smartphones and small devices */
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .wrapper h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .wrapper h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .wrapper ul {
+    padding-left: 15px;
+  }
+
+  .wrapper li {
+    margin-bottom: 8px;
+  }
+
+  .servicesSection li {
+    max-width: 400px; /* スマートフォンやタブレットの画面幅に合わせて値を調整してください */
+  }
+}

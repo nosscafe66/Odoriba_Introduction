@@ -32,7 +32,6 @@ export function Main(props) {
           <code className={styles.code}>pages/{props.page}.js</code>
         </Headline>
         <Service page={props.page} />
-        <IndexButton />
       </main>
     )
   } else if (props.page == "Information") {

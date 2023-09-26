@@ -7,6 +7,18 @@
   min-height: 100vh;
 }
 
+.mainimage{
+  opacity: 0.5;
+  background-color: antiquewhite;
+  border-radius: 6px;
+  width: 1000px;
+  height: 800px;
+}
+
+.title{
+  font-size:50px ;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -177,6 +189,15 @@
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
+  }
+
+  .mainimage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title{
+    font-size:100% ;
   }
 
   .grid {

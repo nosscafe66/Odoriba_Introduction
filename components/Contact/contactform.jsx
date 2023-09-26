@@ -11,8 +11,8 @@ export function ContactForm() {
 
     return (
         <div className={classes.ContactForm}>
-            <h1>お問合せフォーム</h1>
             <form method="POST">
+            <h1>お問合せフォーム</h1>
                 <p className={classes.namelabel}>
                     <label htmlFor="お名前">お名前<span className={classes.mustcontext}>(必須)</span></label>
                 </p>
