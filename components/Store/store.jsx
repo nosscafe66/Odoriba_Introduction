@@ -1,4 +1,4 @@
-import styles from './card.module.css'
+import styles from '../Card/card.module.css'
 
 export default function Card({ title, image, description }) {
   return (
