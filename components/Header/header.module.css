@@ -1,34 +1,65 @@
 .header {
-    border-bottom: 1px solid #000000;
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* 両端に要素を配置 */
+    justify-content: space-between;
+    /* 両端に要素を配置 */
     align-items: center;
-    background-color: #000000;
-    position: relative; /* ドロップダウンメニューの位置を調整するため */
+    background-color: transparent;
+    /* 初期状態で背景を透明に設定 */
+    transition: background-color 0.3s;
+    /* 背景色の変更にアニメーションを設定 */
+    position: fixed;
+    /* ドロップダウンメニューの位置を調整するため */
+    top: 0;
+    /* ページの上部に配置 */
+    left: 0;
+    /* ページの左端に配置 */
+    z-index: 100;
+    /* ヘッダーを他の要素の上に表示 */
 }
+
+.header.scrolled {
+    background-color: #ffffff;
+    /* color: #000000; */
+}
+
+.serviceName {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    margin-right: auto;
+    padding: 30px;
+  }
 
 .anchor {
-    padding: 4px 12px;
-    display: inline-block;
-    font-size: 1.2rem;
-    width: 200px;
-    color: white;
-    text-align: center; /* リンクテキストを中央揃え */
+    color: transparent;
+    color: black;
+    /* 初期状態で文字を透明に設定 */
+    transition: color 0.3s;
+    /* 文字色の変更にアニメーションを設定 */
+    font-size: 15px;
+    width: 90px;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
-.anchor:hover,
-.anchor:focus,
-.anchor:active {
-    color: rgb(5, 42, 162);
+.header.scrolled.anchor {
+    color: rgb(223, 0, 0);
+    /* スクロール時のナビゲーションリンクの文字色 */
+}
+
+.anchor.active {
+    color: blue; /* Text color for active section */
 }
 
 .hamburger {
-    display: none;  /* デフォルトでは非表示 */
+    display: none;
+    /* デフォルトでは非表示 */
     font-size: 24px;
     cursor: pointer;
-    color: white; /* アイコンの色 */
+    color: rgb(0, 0, 0);
+    /* アイコンの色 */
     padding: 4px 12px;
 }
 
@@ -37,25 +68,50 @@
     gap: 20px;
 }
 
-/* モバイルサイズのスタイル */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;  /* モバイルサイズでは表示 */
+/* パソコンサイズのスタイル */
+@media (min-width: 769px) {
+    .header {
+        justify-content: flex-end;
+        /* 全ての要素を右側に寄せる */
     }
 
     .nav {
-        display: none;   /* メニューアイテムはデフォルトで非表示 */
+        display: flex;
+        gap: 0;
+        /* 項目間の間隔を無くす */
+    }
+}
+
+
+/* モバイルサイズのスタイル */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        /* モバイルサイズでは表示 */
+    }
+
+    .nav {
+        display: none;
+        /* メニューアイテムはデフォルトで非表示 */
         flex-direction: column;
         gap: 10px;
-        position: absolute; /* メニューを絶対位置に */
-        top: 100px; /* ヘッダーの下に配置 */
-        left: 0; /* ヘッダーの右側に配置 */
-        background-color: #000000; /* メニューの背景色 */
-        border: 1px solid #FFFFFF; /* メニューの境界線 */
-        z-index: 10; /* 他の要素の上に表示 */
+        position: absolute;
+        /* メニューを絶対位置に */
+        top: 100px;
+        /* ヘッダーの下に配置 */
+        left: 0;
+        /* ヘッダーの右側に配置 */
+        background-color: #ffffff;
+        /* メニューの背景色 */
+        border-radius: 6px;
+        border: 1px solid #000000;
+        /* メニューの境界線 */
+        z-index: 10;
+        /* 他の要素の上に表示 */
     }
 
     .nav.open {
-        display: flex;   /* ハンバーガーアイコンがクリックされたときに表示 */
+        display: flex;
+        /* ハンバーガーアイコンがクリックされたときに表示 */
     }
 }

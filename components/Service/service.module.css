@@ -1,16 +1,63 @@
-.IndexButton{
-    text-align:center;
-}
-
-.Button{
-    border-radius: 1.2rem;
-    padding: 20px;
-    margin-top:10px;
-    background-color: #E48071;
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a13c0d; /* This is an example color, replace with your desired color */
+    color: #ffffff; /* Adjust text color as needed */
+    padding: 50px; /* Add padding as necessary */
+    min-height: 100vh; /* Use min-height to cover at least the full height of the viewport */
+  }
+  
+  .textSection {
+    flex: 1;
+    padding-right: 50px; /* Adjust the spacing between text and image */
+  }
+  
+  .imageSection {
+    position: relative;
+    width: 50%; /* You can keep this as 50% or adjust as needed */
+    height: 60vh; /* Adjust this value to control the height of the image */
+    max-width: 500px; /* Max width for larger screens to prevent the image from becoming too large */
+    max-height: 500px; /* Max height for larger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Remove the width and height properties from the .imageStyle class */
+  .imageStyle {
+    objectFit: contain; /* This will ensure the image keeps its aspect ratio */
+  }
+  
+  /* Adjustments for larger screens */
+  @media (min-width: 992px) {
+    .imageSection {
+      max-width: 300px; /* Adjust this to the size that works for your layout */
+      max-height: 300px; /* Adjust this to the size that works for your layout */
+      justify-content: flex-start; /* Aligns children (the image) to the left */
+      margin-right: auto; /* This will push the image to the left */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      text-align: center; /* Center text for smaller screens */
+    }
     
-}
-.Button:hover,
-.Button:focus,
-.Button:active {
-    color:rgb(220, 18, 14)
-}
+    .textSection {
+      order: 2; /* Image will come first on small screens */
+      padding-right: 0; /* Reset padding */
+      padding-top: 20px; /* Add space between the image and the text */
+    }
+  
+    .imageSection {
+      order: 1; /* Image will come first on small screens */
+      width: 80%; /* Adjust the width for small screens */
+      max-width: none; /* Remove max-width restriction */
+      height: auto; /* Adjust the height for small screens */
+      margin-top: 80px; /* Push the image down a bit */
+      /* Use a larger top margin if necessary to move the image further down */
+    }
+  }
+  

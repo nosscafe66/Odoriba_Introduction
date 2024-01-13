@@ -8,9 +8,8 @@ export function ContactForm() {
         e.target.value.trim()
     })
 
-
     return (
-        <div className={classes.ContactForm}>
+        <div id="contact" className={classes.ContactForm}>
             <form method="POST">
             <h1>お問合せフォーム</h1>
                 <p className={classes.namelabel}>
