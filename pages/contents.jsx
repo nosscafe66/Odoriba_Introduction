@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Main } from '@/components/Main'
 import { Header } from '@/components/Header/header'
 import { Footer } from '@/components/Footer/footer'
-import { client } from "./api/libs/client"
 import { Pagination } from '@/components/Pagenation/pagenation'
 
 export default function Blog({ blog, totalCount, category }) {
@@ -20,16 +19,3 @@ export default function Blog({ blog, totalCount, category }) {
         </div>
     )
 }
-
-export const getStaticProps = async () => {
-    const data = await client.get({ endpoint: "blog", queries: { offset: 0, limit: 5 } });
-    const categoryData = await client.get({ endpoint: "categories" });
-
-    return {
-        props: {
-            blog: data.contents,
-            totalCount: data.totalCount,
-            category: categoryData.contents,
-        },
-    };
-};
