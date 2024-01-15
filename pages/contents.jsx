@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Main } from '@/components/Main'
 import { Header } from '@/components/Header/header'
 import { Footer } from '@/components/Footer/footer'
-import { client } from "./api/libs/client"
 import { Pagination } from '@/components/Pagenation/pagenation'
 
 export default function Blog({ blog, totalCount, category }) {
