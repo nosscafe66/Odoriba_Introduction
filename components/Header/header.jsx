@@ -48,9 +48,11 @@ export function Header() {
     return (
         <header className={`${classes.header} ${scrolled ? classes.scrolled : ''}`}>
             <div className={classes.serviceName}>Odoriba</div>
-            <div className={classes.hamburger} onClick={toggleMenu}>
-                ☰
-            </div>
+            <button className={classes.hamburger} onClick={toggleMenu} aria-label="Menu">
+            <span className={isOpen ? classes.crossIcon : classes.hamburgerIcon}>
+                    {isOpen ? '✕' : '☰'}
+                </span>
+            </button>
 
             <nav className={`${classes.nav} ${isOpen ? classes.open : ''}`}>
                 <a href="#information" className={`${classes.anchor} ${activeSection === 'information' ? 'active' : ''}`}>Information</a>

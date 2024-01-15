@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0D47A1; /* This is an example color, replace with your desired color */
+  background-color: #9bbff6; /* This is an example color, replace with your desired color */
   color: #ffffff; /* Adjust text color as needed */
   padding: 50px; /* Add padding as necessary */
   min-height: 100vh; /* Use min-height to cover at least the full height of the viewport */
@@ -39,6 +39,17 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .imageSection {
+    max-width: 300px; /* Adjust this value as needed */
+    max-height: 300px; /* Adjust this value as needed */
+    width: 60%; /* Example: Set the width to 60% of the container */
+    height: auto; /* Maintain aspect ratio */
+    justify-content: center; /* Keep the image centered */
+  }
+}
+
+
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
@@ -48,15 +59,15 @@
   .textSection {
     order: 2; /* Image will come first on small screens */
     padding-right: 0; /* Reset padding */
-    padding-top: 20px; /* Add space between the image and the text */
+    padding-top: 200px; /* Add space between the image and the text */
   }
 
   .imageSection {
     order: 1; /* Image will come first on small screens */
-    width: 80%; /* Adjust the width for small screens */
+    width: 70%; /* Adjust the width for small screens */
     max-width: none; /* Remove max-width restriction */
     height: auto; /* Adjust the height for small screens */
-    margin-top: 80px; /* Push the image down a bit */
+    margin-top: 250px; /* Push the image down a bit */
     /* Use a larger top margin if necessary to move the image further down */
   }
 }

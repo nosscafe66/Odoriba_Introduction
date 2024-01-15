@@ -7,8 +7,6 @@ import { Service } from './Service/service'
 import { About } from './About/about'
 import { IndexButton } from './Button/indexbutton'
 import { Information } from './Information/information'
-import BlogContent from './Blog/blogcontent'
-import { Category } from './Tag/tag'
 import { Content } from './Content/content'
 import { ContactForm } from './Contact/contactform'
 

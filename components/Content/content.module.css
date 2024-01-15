@@ -1,24 +1,73 @@
-.maincontent{
-    background-color: rgb(250, 238, 168);
-    height: 900px;
-    width: 900px;
-    padding: 40px;
-    border-radius: 6px;
-    box-shadow: inset;
-}
-
-.categorybar{
-    list-style: none;
-}
-
-.blogcontent{
-    list-style: none;
-}
-
-.li{
-    float: left;
-}
-
-.ul{
+.wrapper {
     display: flex;
-}
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 238, 168);
+    color: #ffffff;
+    padding: 50px;
+    min-height: 100vh;
+  }
+  
+  .textSection {
+    flex: 1;
+    padding-right: 50px; /* Adjust the spacing between text and image */
+  }
+  
+  .imageSection {
+    position: relative;
+    width: 50%; /* You can keep this as 50% or adjust as needed */
+    height: 60vh; /* Adjust this value to control the height of the image */
+    max-width: 500px; /* Max width for larger screens to prevent the image from becoming too large */
+    max-height: 500px; /* Max height for larger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Remove the width and height properties from the .imageStyle class */
+  .imageStyle {
+    objectFit: contain; /* This will ensure the image keeps its aspect ratio */
+  }
+  
+  @media (min-width: 992px) {
+    .imageSection {
+      max-width: 300px; /* Adjust this to the size that works for your layout */
+      max-height: 300px; /* Adjust this to the size that works for your layout */
+      justify-content: flex-start; /* Aligns children (the image) to the left */
+      margin-right: auto; /* This will push the image to the left */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    .imageSection {
+      max-width: 300px; /* Adjust this value as needed */
+      max-height: 300px; /* Adjust this value as needed */
+      width: 60%; /* Example: Set the width to 60% of the container */
+      height: auto; /* Maintain aspect ratio */
+      justify-content: center; /* Keep the image centered */
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      text-align: center; /* Center text for smaller screens */
+    }
+    
+    .textSection {
+      order: 2; /* Image will come first on small screens */
+      padding-right: 0; /* Reset padding */
+      padding-top: 200px; /* Add space between the image and the text */
+    }
+  
+    .imageSection {
+      order: 1; /* Image will come first on small screens */
+      width: 70%; /* Adjust the width for small screens */
+      max-width: none; /* Remove max-width restriction */
+      height: auto; /* Adjust the height for small screens */
+      margin-top: 250px; /* Push the image down a bit */
+      /* Use a larger top margin if necessary to move the image further down */
+    }
+  }
+  
