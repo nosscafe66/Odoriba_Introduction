@@ -67,6 +67,22 @@
     padding: 4px 12px;
 }
 
+.hamburgerIcon, .crossIcon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.hamburgerIcon {
+    /* Initial state for hamburger */
+    transform: rotate(0deg);
+}
+
+.crossIcon {
+    /* Rotated state for cross */
+    transform: rotate(45deg); /* You can adjust this rotation */
+}
+
+
 .nav {
     display: flex;
     gap: 20px;
@@ -103,12 +119,11 @@
         /* メニューを絶対位置に */
         top: 100px;
         /* ヘッダーの下に配置 */
-        left: 0;
+        right: 0;
         /* ヘッダーの右側に配置 */
         background-color: #ffffff;
         /* メニューの背景色 */
-        border-radius: 6px;
-        border: 1px solid #000000;
+        /* border: 1px solid #000000; */
         /* メニューの境界線 */
         z-index: 10;
         /* 他の要素の上に表示 */

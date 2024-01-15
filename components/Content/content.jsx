@@ -1,13 +1,13 @@
-import classes from './content.module.css'
+import classes from "./content.module.css"
 import Image from 'next/image';
 
 export function Content() {
   return (
-    <div id="content" className={classes.wrapper}>
+    <div id="contents" className={classes.wrapper}>
         <div className={classes.imageSection}>
         {/* Adjust the path to your iOS image */}
         <Image
-          src="/img/calender.png"
+          src="/img/iphone.png"
           alt="iOS App"
           objectFit="contain"
           layout="responsive"
