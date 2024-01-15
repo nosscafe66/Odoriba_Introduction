@@ -19,6 +19,10 @@
     /* ヘッダーを他の要素の上に表示 */
 }
 
+.nav a {
+    text-decoration: none;
+  }
+
 .header.scrolled {
     background-color: #ffffff;
     /* color: #000000; */
