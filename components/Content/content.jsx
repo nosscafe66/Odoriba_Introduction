@@ -1,10 +1,12 @@
-import classes from "./content.module.css"
+import classes from "./content.module.css";
 import Image from 'next/image';
 
 export function Content() {
   return (
     <div id="contents" className={classes.wrapper}>
-        <div className={classes.imageSection}>
+
+      {/* Image Section */}
+      <div className={classes.imageSection}>
         {/* Adjust the path to your iOS image */}
         <Image
           src="/img/iphone.png"
@@ -13,15 +15,21 @@ export function Content() {
           layout="responsive"
           width={700} /* Example width */
           height={700} /* Example height to maintain aspect ratio */
-          className={classes.imageStyle} // Add this line
+          className={classes.imageStyle} // Add this line for custom image styling
         />
       </div>
+
+      {/* Text Section */}
       <div className={classes.textSection}>
         {/* All your text content goes here */}
-        <h1>より道な会話よりも、尋ねてより道</h1>
-        <p>あなたが今日したコミュニケーションは、明日のあなたのコミュニケーションになる。</p>
+        <p>
+          アプリでは、豊富なダンス関連コンテンツを提供しています。プロのダンサーによるチュートリアルビデオ、
+          インタビュー、舞台裏の様子など、独占的なコンテンツが満載。また、ユーザーが自らのダンスビデオを
+          アップロードし、コミュニティと共有することもできます。
+        </p>
         {/* ... other text and buttons ... */}
       </div>
+
     </div>
-  )
+  );
 }
