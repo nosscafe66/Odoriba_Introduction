@@ -36,6 +36,7 @@
     max-height: 300px; /* Adjust this to the size that works for your layout */
     justify-content: flex-start; /* Aligns children (the image) to the left */
     margin-right: auto; /* This will push the image to the left */
+    padding-top: 80px;
   }
 }
 

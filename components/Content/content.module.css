@@ -9,9 +9,14 @@
   }
   
   .textSection {
-    flex: 1;
-    padding-right: 50px; /* Adjust the spacing between text and image */
+    width: 80%;
+    text-align: center; /* Centers text in the text section */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Improves readability of text */
+    color: #333; /* Dark grey color for better readability */
+    margin-bottom: 20px;
   }
+  
   
   .imageSection {
     position: relative;
@@ -28,6 +33,8 @@
   .imageStyle {
     objectFit: contain; /* This will ensure the image keeps its aspect ratio */
   }
+
+
   
   @media (min-width: 992px) {
     .imageSection {
